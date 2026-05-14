@@ -1,0 +1,131 @@
+
+/* ================= ADMIN DASHBOARD ================= */
+
+.adminGrid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  margin-top: 80px;
+  min-height: 100vh;
+  background: #f6f6f6;
+}
+
+/* Sidebar */
+.adminSidebar {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.adminSidebar h3 {
+  color: gold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.adminSidebar ul {
+  list-style: none;
+}
+
+.adminSidebar li {
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.adminSidebar li:hover,
+.adminSidebar li.active {
+  background: gold;
+  color: #000;
+}
+
+.adminSidebar .logout {
+  margin-top: 30px;
+  background: #1a1a1a;
+}
+
+/* Content */
+.adminContent {
+  padding: 50px;
+}
+
+.adminContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Stats */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.statCard {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.statCard i {
+  font-size: 2rem;
+  color: gold;
+  margin-bottom: 10px;
+}
+
+/* Table */
+.tableCard {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.tableCard h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.confirmed {
+  color: green;
+  font-weight: bold;
+}
+
+.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .adminGrid {
+    grid-template-columns: 1fr;
+  }
+  .adminSidebar {
+    display: none;
+  }
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

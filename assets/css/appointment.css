@@ -1,0 +1,122 @@
+
+/* ================= APPOINTMENT PAGE ================= */
+
+.appointmentHero {
+  grid-column: 1 / -1;
+  padding: 140px 10% 80px;
+  text-align: center;
+  background: linear-gradient(135deg, #000, #2c2c2c);
+}
+
+.appointmentHero h1 {
+  font-size: 3.2rem;
+  color: gold;
+  margin-bottom: 15px;
+}
+
+.appointmentHero p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* Layout */
+.appointmentSection {
+  grid-column: 1 / -1;
+  padding: 100px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  background: #fffdf7;
+}
+
+/* Left Info */
+.appointmentInfo h2 {
+  font-size: 2.4rem;
+  color: #111;
+  margin-bottom: 25px;
+}
+
+.appointmentInfo ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.appointmentInfo li {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.appointmentInfo i {
+  color: #b7950b;
+  font-size: 1.4rem;
+}
+
+.appointmentCard {
+  background: #000;
+  color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.appointmentCard h3 {
+  color: gold;
+  margin-bottom: 15px;
+}
+
+/* Right Form */
+.appointmentForm {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.08);
+}
+
+.appointmentForm h2 {
+  margin-bottom: 25px;
+  color: #111;
+  font-size: 2rem;
+}
+
+.formRow {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.appointmentForm input,
+.appointmentForm select,
+.appointmentForm textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.appointmentForm textarea {
+  height: 120px;
+  resize: none;
+}
+
+.appointmentForm .btn {
+  width: 100%;
+  margin-top: 20px;
+  background: gold;
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .appointmentSection {
+    grid-template-columns: 1fr;
+  }
+  .appointmentHero h1 {
+    font-size: 2.4rem;
+  }
+}

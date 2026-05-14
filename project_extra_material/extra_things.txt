@@ -1,0 +1,977 @@
+
+echo password_hash("Shahizewer@2025", PASSWORD_DEFAULT);
+
+
+<?php 
+require_once __DIR__ . '/db/app.php'; // or correct path
+
+$pageTitle = "Home – Shahizewer"; // This is the title for THIS page
+require_once 'views/header.php'; 
+?>
+
+<!-- Hero Section -->
+<section class="hero-section position-relative">
+  <video autoplay muted loop playsinline class="w-100" style="height:100vh; object-fit:cover; filter: brightness(60%); position:absolute; top:0; left:0; z-index:-1;">
+    <source src="assets/images/bgVideo.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay d-flex flex-column justify-content-center align-items-center text-center text-white" style="height:100vh;">
+    <h1 class="display-1 fw-bold" style="letter-spacing:5px;">SOPHISTICATION</h1>
+    <a href="necklaces.html" class="btn btn-gold btn-lg mt-3">Necklaces</a>
+  </div>
+</section>
+
+<!-- Products Section -->
+<section class="py-5 bg-white text-center" id="products">
+  <div class="container">
+    <h2 class="section-title mb-2">Featured Collections</h2>
+    <p class="text-muted mb-5">Luxury jewellery crafted with elegance & tradition.</p>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card featured-card h-100 border-0 shadow-sm">
+          <img src="assets/images/necklace8.png" class="featured-img" alt="Gold Plated Necklace">
+          <div class="card-body">
+            <h5 class="fw-semibold">Gold Plated Necklace</h5>
+            <p class="text-muted mb-2">$89.99 CAD</p>
+            <a href="#" class="btn btn-gold w-100">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card featured-card h-100 border-0 shadow-sm">
+          <img src="assets/images/earring6.png" class="featured-img" alt="Earrings">
+          <div class="card-body">
+            <h5 class="fw-semibold">Earrings</h5>
+            <p class="text-muted mb-2">$39.99 CAD</p>
+            <a href="#" class="btn btn-gold w-100">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card featured-card h-100 border-0 shadow-sm">
+          <img src="assets/images/paranda1.png" class="featured-img" alt="Traditional Paranda">
+          <div class="card-body">
+            <h5 class="fw-semibold">Traditional Paranda</h5>
+            <p class="text-muted mb-2">$64.99 CAD</p>
+            <a href="#" class="btn btn-gold w-100">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card featured-card h-100 border-0 shadow-sm">
+          <img src="assets/images/ring1.png" class="featured-img" alt="Adjustable Ring">
+          <div class="card-body">
+            <h5 class="fw-semibold">Adjustable Ring</h5>
+            <p class="text-muted mb-2">$29.99 CAD</p>
+            <a href="#" class="btn btn-gold w-100">View Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Promo Banner -->
+<section class="promo-banner py-4 text-center position-relative overflow-hidden">
+  <div class="container">
+    <p class="promo-tagline mb-0">
+  <span class="sparkle">✨</span>
+  <span class="tagline-item text-gold">Stunning Traditional Jewellery</span>
+  <span class="separator">|</span>
+  <span class="tagline-item text-gold">Handcrafted with Love</span>
+  <span class="separator">|</span>
+  <span class="tagline-item text-gold">Sophistication & Elegance for Every Occasion</span>
+  <span class="sparkle">✨</span>
+</p>
+
+  </div>
+  <div class="sparkle-background"></div>
+</section>
+
+<!-- ================= PREMIUM GALLERY ================= -->
+<section class="py-5 bg-light" id="gallerySection">
+  <div class="container text-center">
+    <h2 class="gallery-title mb-5">Our Jewellery Collection</h2>
+    <div class="row g-4">
+
+      <!-- Gallery Item 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+          <img src="assets/images/image11.jpeg" class="img-fluid" alt="Royal Gold Necklace">
+          <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-gold mb-3">Royal Gold Necklace</h5>
+            <a href="#" class="btn btn-gold btn-lg">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+          <img src="assets/images/image12.jpeg" class="img-fluid" alt="Traditional Jhumki">
+          <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-gold mb-3">Traditional Jhumki</h5>
+            <a href="#" class="btn btn-gold btn-lg">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+          <img src="assets/images/image13.jpeg" class="img-fluid" alt="CZ Bracelet">
+          <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-gold mb-3">CZ Bracelet</h5>
+            <a href="#" class="btn btn-gold btn-lg">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+          <img src="assets/images/image14.jpeg" class="img-fluid" alt="Exclusive AD Necklace">
+          <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-gold mb-3">Exclusive AD Necklace</h5>
+            <a href="#" class="btn btn-gold btn-lg">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 5 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+          <img src="assets/images/image5.jpeg" class="img-fluid" alt="Traditional Jhumki">
+          <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-gold mb-3">Traditional Jhumki</h5>
+            <a href="#" class="btn btn-gold btn-lg">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 6 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+          <img src="assets/images/image6.jpeg" class="img-fluid" alt="Premium Heritage Necklace">
+          <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-gold mb-3">Premium Heritage Necklace</h5>
+            <a href="#" class="btn btn-gold btn-lg">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 7 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+          <img src="assets/images/image7.jpeg" class="img-fluid" alt="Gold Plated Necklace">
+          <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-gold mb-3">Gold Plated Necklace</h5>
+            <a href="#" class="btn btn-gold btn-lg">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 8 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+          <img src="assets/images/image8.jpeg" class="img-fluid" alt="Premium Necklace">
+          <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-gold mb-3">Premium Necklace</h5>
+            <a href="#" class="btn btn-gold btn-lg">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 9 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+          <img src="assets/images/image9.jpeg" class="img-fluid" alt="Elegant Ring">
+          <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-gold mb-3">Elegant Ring</h5>
+            <a href="#" class="btn btn-gold btn-lg">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 10 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+          <img src="assets/images/image10.jpeg" class="img-fluid" alt="Luxury Earrings">
+          <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-gold mb-3">Luxury Earrings</h5>
+            <a href="#" class="btn btn-gold btn-lg">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 11 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+          <img src="assets/images/image1.jpeg" class="img-fluid" alt="Exclusive Ring">
+          <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-gold mb-3">Exclusive Ring</h5>
+            <a href="#" class="btn btn-gold btn-lg">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 12 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+          <img src="assets/images/image2.jpg" class="img-fluid" alt="Adjustable Ring">
+          <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-gold mb-3">Adjustable Ring</h5>
+            <a href="#" class="btn btn-gold btn-lg">View Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= PROMO SLIDER ================= -->
+<section class="promo-slider-section py-5 position-relative">
+  <div class="container">
+    <div id="promoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 text-center text-lg-start">
+              <h2 class="promo-title">Elegance Beyond Time</h2>
+              <p class="promo-text">
+                Discover handcrafted jewellery inspired by India’s royal heritage. Each piece tells a story of tradition, artistry, and timeless beauty.
+              </p>
+              <a href="#" class="btn btn-gold promo-btn">Explore Collection</a>
+            </div>
+            <div class="col-lg-6 text-center position-relative">
+              <div class="promo-img-container">
+                <img src="assets/images/image1.jpg" class="img-fluid promo-img" alt="Elegant Necklace">
+                <div class="sparkle-overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 text-center text-lg-start">
+              <h2 class="promo-title">Royal Gold Necklaces</h2>
+              <p class="promo-text">
+                Handpicked luxury necklaces that speak elegance and sophistication. Perfect for every occasion.
+              </p>
+              <a href="#" class="btn btn-gold promo-btn">Shop Necklaces</a>
+            </div>
+            <div class="col-lg-6 text-center position-relative">
+              <div class="promo-img-container">
+                <img src="assets/images/image11.jpeg" class="img-fluid promo-img" alt="Royal Necklace">
+                <div class="sparkle-overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 text-center text-lg-start">
+              <h2 class="promo-title">Timeless Earrings</h2>
+              <p class="promo-text">
+                Exquisite handcrafted earrings that combine tradition and modern elegance. Shine in every moment.
+              </p>
+              <a href="#" class="btn btn-gold promo-btn">Shop Earrings</a>
+            </div>
+            <div class="col-lg-6 text-center position-relative">
+              <div class="promo-img-container">
+                <img src="assets/images/image12.jpeg" class="img-fluid promo-img" alt="Timeless Earrings">
+                <div class="sparkle-overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section class="py-5" style="background:#fffdf7;">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-uppercase" style="color:#b8860b; letter-spacing:2px;">Contact Us</h2>
+            <p class="text-muted">Have questions about our jewellery collections or appointments? We’re here to help.</p>
+        </div>
+        <div class="row g-4 align-items-stretch">
+
+            <!-- Left Info Card -->
+            <div class="col-lg-5">
+                <div class="p-5 rounded-4 shadow-lg h-100 text-white" style="background:#000;">
+                    <h3 class="fw-bold mb-3" style="color:gold;">Get in Touch</h3>
+                    <p class="text-light opacity-75 mb-4">Feel free to contact us anytime. We’ll respond as quickly as possible.</p>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bx bx-map fs-2 me-3" style="color:gold;"></i>
+                        <div>
+                            <h6 class="mb-0 fw-semibold">Address</h6>
+                            <small class="text-light opacity-75">Toronto, Canada</small>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bx bx-phone fs-2 me-3" style="color:gold;"></i>
+                        <div>
+                            <h6 class="mb-0 fw-semibold">Phone</h6>
+                            <small class="text-light opacity-75">+1 647 123 4567</small>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bx bx-envelope fs-2 me-3" style="color:gold;"></i>
+                        <div>
+                            <h6 class="mb-0 fw-semibold">Email</h6>
+                            <small class="text-light opacity-75">support@shahizewer.com</small>
+                        </div>
+                    </div>
+                    <hr class="border-secondary my-4">
+                    <h6 class="fw-semibold mb-3" style="color:gold;">Follow Us</h6>
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="#" class="text-decoration-none" style="color:gold;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-decoration-none" style="color:gold;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-decoration-none" style="color:gold;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Form Card -->
+            <div class="col-lg-7">
+                <div class="p-5 rounded-4 shadow-lg bg-white h-100">
+                    <h3 class="fw-bold mb-4 text-dark">Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div id="successAlert" class="alert alert-success d-none rounded-3" role="alert">
+                            ✅ Your message has been sent successfully! We will contact you soon.
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Full Name</label>
+                                <input type="text" class="form-control form-control-lg rounded-3" placeholder="Enter your name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Email Address</label>
+                                <input type="email" class="form-control form-control-lg rounded-3" placeholder="Enter your email" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Subject</label>
+                                <input type="text" class="form-control form-control-lg rounded-3" placeholder="Subject" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Message</label>
+                                <textarea rows="5" class="form-control form-control-lg rounded-3" placeholder="Write your message..." required></textarea>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <button type="submit" class="btn btn-lg w-100 rounded-pill fw-bold" style="background:gold; color:black; border:none;">
+                                    Send Message <i class="bx bx-send ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= GOOGLE MAP ================= -->
+<section class="py-0">
+    <iframe class="w-100" height="350" style="border:0;" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.428580270074!2d-79.383184!3d43.653226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d1f2e9d2f5%3A0x1b7f5c1c2c6c2c6c!2sToronto!5e0!3m2!1sen!2sca!4v1710000000000">
+    </iframe>
+</section>
+
+<?php require_once 'views/footer.php'; ?>
+
+
+
+
+previous header code
+
+<?php
+   declare(strict_types=1);
+
+  // Include BASE_URL and start session
+  require_once __DIR__ . '/../db/app.php';
+
+   if (session_status() === PHP_SESSION_NONE) {
+     session_start();
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><?= $pageTitle ?? 'Shahizewer - Indian Traditional Jewellery' ?></title>
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/bootstrap_custom.css">
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<div class="py-2 text-center text-white small" style="background:#111;">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    
+    <div class="d-flex gap-3">
+      <span><i class="bx bx-truck" style="color:gold;"></i> Free Shipping in Canada</span>
+      <span class="d-none d-md-inline">|</span>
+      <span><i class="bx bx-time" style="color:gold;"></i> Book Appointment Anytime</span>
+    </div>
+
+    <div class="mt-2 mt-md-0">
+      <span><i class="bx bx-phone" style="color:gold;"></i> +1 647 123 4567</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= PREMIUM NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm" style="background:#000;">
+  <div class="container py-2">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#">
+      <img src="<?= BASE_URL ?>/assets/images/newlogo.png" width="45" class="rounded-circle">
+      <span style="color:gold; letter-spacing:2px;">SHAHIZEWER</span>
+    </a>
+
+    <!-- Mobile Button -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="mainNav">
+
+      <ul class="navbar-nav mx-auto gap-lg-4 text-uppercase fw-semibold">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Shipping</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Appointment</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Track Order</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+
+      <!-- Right Icons -->
+      <div class="d-flex align-items-center gap-3">
+
+        <!-- Currency -->
+        <select class="form-select form-select-sm text-white border-0 rounded-pill px-3"
+                style="background:#111; width:auto;">
+          <option>CAD $</option>
+          <option>USD $</option>
+          <option>INR ₹</option>
+        </select>
+
+        <!-- Search -->
+        <a href="#" class="text-decoration-none fs-5" style="color:gold;">
+          <i class="bx bx-search"></i>
+        </a>
+
+        <!-- Account -->
+        <a href="<?= BASE_URL ?>/auth/login.php" class="text-decoration-none fs-5" style="color:gold;">
+          <i class="bx bx-user"></i>
+        </a>
+
+        <!-- Cart -->
+        <a href="#" class="text-decoration-none fs-5" style="color:gold;">
+          <i class="bx bx-cart"></i>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+// app.js before adding animation on about page of typing text
+ function showGallery(card) {
+    document.getElementById("galleryModalImg").src =
+      card.querySelector("img").src;
+  }
+
+  function filterGallery(category) {
+    const items = document.querySelectorAll(".gallery-item");
+    const buttons = document.querySelectorAll(".filter-btn");
+
+    buttons.forEach(btn => btn.classList.remove("active"));
+    event.target.classList.add("active");
+
+    items.forEach(item => {
+      if (category === "all" || item.classList.contains(category)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let alertBox = document.getElementById("successAlert");
+
+    // Show alert
+    alertBox.classList.remove("d-none");
+
+    // Reset form fields
+    this.reset();
+
+    // Hide alert after 4 seconds
+    setTimeout(() => {
+      alertBox.classList.add("d-none");
+    }, 4000);
+  });
+
+  // ================= PROMO CAROUSEL =================
+document.addEventListener("DOMContentLoaded", function () {
+    var promoCarousel = document.getElementById('promoCarousel');
+    if (promoCarousel) {
+        var carousel = new bootstrap.Carousel(promoCarousel, {
+            interval: 5000,
+            ride: 'carousel',
+            pause: 'hover'
+        });
+    }
+});
+
+
+Existing hero section code before CTA Btn
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero-section position-relative">
+  <video autoplay muted loop playsinline class="w-100" style="height:100vh; object-fit:cover; filter: brightness(60%); position:absolute; top:0; left:0; z-index:-1;">
+    <source src="assets/images/bgVideo.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay d-flex flex-column justify-content-center align-items-center text-center text-white" style="height:100vh;">
+    <h1 class="display-1 fw-bold" style="letter-spacing:5px;">SOPHISTICATION</h1>
+    <a href="<?= BASE_URL ?>/shop.php" class="btn-gold btn-gold-md mt-3">
+      Necklaces
+    </a>
+  </div>
+</section>
+
+
+Blog page content 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<title>Toronto Tax Services</title>
+
+<!-- Fav Icon -->
+<link rel="icon" href="assets/images/favicon-toronto.ico" type="image/x-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link href="assets/css/font-awesome-all.css" rel="stylesheet">
+<link href="assets/css/flaticon.css" rel="stylesheet">
+<link href="assets/css/owl.css" rel="stylesheet">
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+<link href="assets/css/animate.css" rel="stylesheet">
+<link href="assets/css/nice-select.css" rel="stylesheet">
+<link href="assets/css/color.css" rel="stylesheet">
+<link href="assets/css/rtl.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
+
+</head>
+
+
+<!-- page wrapper -->
+<body class="boxed_wrapper ltr">
+
+    <header class="main-header style-four" style="position:fixed; background-color:white">
+        <div class="header-lower">
+            <div class="auto-container">
+                <div class="outer-box clearfix">
+                    <div class="logo-box pull-left">
+                        <figure class="logo"><a href="index.html"><img src="assets/images/logo-toronto.png" alt=""></a></figure>
+                    </div>
+                    <div class="menu-area pull-right clearfix">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler">
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                        </div>
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li class="dropdown"><a>Services</a>
+                                        <ul>
+                                            <li><a href="tax-audit-review.html">Tax Audits & Reviews</a></li>
+                                            <li><a href="personal-taxes.html">Personal & Family</a></li>
+                                            <li><a href="self-employed.html">Self-Employed</a></li>
+                                            <li><a href="corporate-taxes.html">Corporation Taxes</a></li>
+                                            <li><a href="trust-estates.html">Trust & Estates</a></li>
+                                            <li><a href="bookkeeping-payroll.html">Bookkeeping Services</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown"><a href="blog.html">Blog</a>
+                                        <ul>
+                                            <li><a href="blog.html">All Blogs</a></li>
+                                            <li><a href="blog-diy-vs-pro.html">DIY vs Professional Tax Filing</a></li>
+                                            <li><a href="blog-cross-border-guide.html">Cross-Border Tax Guide</a></li>
+                                            <li><a href="blog-irs-notice.html">IRS Notice Help</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="tel:4167004152">Contact</a></li>
+                                    <li><a href="https://login.torontotaxservices.com">Client Login</a></li>
+                                </ul>
+                                
+                            </div>
+                        </nav>
+                        <div class="menu-right-content clearfix">
+                            <div class="btn-box">
+
+                                
+                                <a href="https://cal.com/torontotax/free-consultation" 
+                                target="_blank" 
+                                class="theme-btn">
+                                Free Consultation
+                                </a>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="index.html"><img src="assets/images/toronto-logo-white.png" alt="" title=""></a></div>
+            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            <div class="contact-info">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>3300 Hwy 7, Suite 600, Toronto, ON</li>
+                    <li><a href="tel:4167004152">416-700-4152</a></li>
+                    <li><a href="mailto:info@torontotaxservices.com">info@torontotaxservices.com</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- End Mobile Menu -->
+
+
+
+
+<!-- =================  BLOG HERO ================= -->
+<section class="blog-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="auto-container hero-content">
+
+        <!-- MAIN TITLE -->
+        <h1 class="hero-title">
+            Expert CPA Insights for Smarter Tax Decisions in Canada
+        </h1>
+
+        <!-- CTA BUTTONS -->
+        <div class="hero-actions">
+            <a href="blog.html" class="hero-btn primary">
+                Explore Articles
+            </a>
+
+            <a href="https://cal.com/torontotax/free-consultation" class="hero-btn secondary">
+                Book Free CPA Call
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= BLOG MAIN ================= -->
+<section class="blog-section">
+    <div class="auto-container">
+
+        <!-- FILTERS -->
+        <div class="blog-filters">
+            <button class="active" onclick="filterBlogs('all', event)">All</button>
+            <button onclick="filterBlogs('personal', event)">Personal Tax</button>
+            <button onclick="filterBlogs('business', event)">Business</button>
+            <button onclick="filterBlogs('cra', event)">CRA Updates</button>
+            <button onclick="filterBlogs('planning', event)">Tax Planning</button>
+        </div>
+
+        <!-- FEATURED BLOG -->
+        <div class="featured-blog fade-in">
+
+            <img src="assets/images/diy_blog.png" alt="Featured Blog">
+
+            <div class="featured-content">
+                <span class="badge">⭐ Featured Article</span>
+
+                <h2>Ditch the DIY Stress: Why Hiring a CPA is the Smart Choice</h2>
+
+                <p>
+                    Avoid CRA mistakes, maximize refunds, and ensure full compliance with expert CPA guidance.
+                </p>
+
+                <a href="blog-diy-vs-pro.html" class="btn-primary">Read Full Article</a>
+            </div>
+
+        </div>
+
+        <!-- BLOG GRID -->
+        <div class="row">
+
+            <!-- CARD 1 -->
+            <div class="col-lg-4 col-md-6 blog-item business">
+                <div class="blog-card fade-in">
+                    <span class="tag trending">Trending</span>
+                    <img src="assets/images/news/toronto-rrsp-tfsa-fhsa.jpg">
+                    <div class="blog-body">
+                        <div class="meta">March 2026 • Business</div>
+                        <h3><a href="blog-startup-support.html">Startup Grants & Funding Guide</a></h3>
+                        <p>Government tax incentives and startup funding programs explained.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-lg-4 col-md-6 blog-item personal">
+                <div class="blog-card fade-in">
+                    <span class="tag">New</span>
+                    <img src="assets/images/resource/toronto-tax-services-info.jpg">
+                    <div class="blog-body">
+                        <div class="meta">Feb 2026 • Personal Tax</div>
+                        <h3><a href="blog-tax-benefits.html">Top 10 Tax Benefits in Canada</a></h3>
+                        <p>RRSP, FHSA, and credits that save thousands every year.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-lg-4 col-md-6 blog-item cra">
+                <div class="blog-card fade-in">
+                    <span class="tag">CRA</span>
+                    <img src="assets/images/diy_blog.png">
+                    <div class="blog-body">
+                        <div class="meta">Jan 2026 • CRA Updates</div>
+                        <h3><a href="blog-irs-notice.html">How to Handle CRA Notices</a></h3>
+                        <p>Step-by-step guide to respond to CRA audit letters safely.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- OLDER POSTS -->
+        <div class="older-posts">
+            <h3>Older Articles</h3>
+
+            <ul>
+                <li><a href="blog-diy-vs-pro.html">Ditch the DIY Stress: Why Hiring a CPA is Better</a></li>
+                <li><a href="blog-tax-benefits.html">Top 10 Tax Benefits You Should Know</a></li>
+                <li><a href="blog-startup-support.html">Startup Funding Guide for Canada</a></li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA SIDEBAR FLOAT (optional simple version) -->
+<div class="floating-cta">
+    <a href="https://cal.com/torontotax/free-consultation">
+        Book Free CPA Call
+    </a>
+</div>
+
+
+
+<!-- KEEP EVERYTHING BELOW SAME (footer + scripts from your original file) -->
+
+
+<!-- main-footer -->
+    <footer class="main-footer alternet-2">
+        <div class="footer-top">
+            <div class="auto-container">
+                <div class="widget-section">
+                    <div class="row clearfix">
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget logo-widget">
+                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/toronto-logo-white.png" alt=""></a></figure>
+                                <div class="text">
+                                    <p>Serving the Greater Toronto with Expert Tax Advice since 2015. We are Toronto's Trusted Tax Services Provider.</p>
+                                </div>
+                                <ul class="info-list clearfix">
+                                    <li><i class="fas fa-map-marker-alt"></i>3300 Hwy 7, Suite 600, Vaughan ON</li>
+                                    <li><i class="fas fa-envelope"></i>Email <a href="mailto:info@torontotaxservices.com">info@torontotaxservices.com</a></li>
+                                    <li><i class="fas fa-headphones"></i>Support <a href="tel:4167004152">416-700-4152</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget ml-70">
+                                <div class="widget-title">
+                                    <h4>Company</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="list clearfix">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="tax-audit-review.html">Audits & Reviews</a></li>
+                                        <li><a href="personal-taxes.html">Personal Tax</a></li>
+                                        <li><a href="corporate-taxes.html">Corporation Tax</a></li>
+                                        <li><a href="bookkeeping-payroll.html">Bookkeeping Services</a></li>
+                                        <li><a>Schedule Consultation</a></li>
+                                        <li><a href="mailto:info@torontotaxservices.com">Submit CV & Resume</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget">
+                                <div class="widget-title">
+                                    <h4>Tax Matters</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="list clearfix">
+                                        <li><a href="https://www.thor.ca/blog/" target="_blank">Tax Law Blog</a></li>
+                                        <li><a href="https://www.tcc-cci.ca" target="_blank">Tax Court of Canada</a></li>
+                                        <li><a href="https://taxinterpretations.com" target="_blank">Tax Interpretations</a></li>
+                                        <li><a href="https://www.ctf.ca/EN/Publications/Canadian_Tax_Journal/CTJ_Issues_Index.aspx" target="_blank">Canadian Tax Journal</a></li>
+                                        <li><a href="https://www.cpaontario.ca" target="_blank">CPA Ontario</a></li>
+                                        <li><a href="https://cpbcan.ca" target="_blank">CPB Canada</a></li>
+                                        <li><a href="https://payroll.ca" target="_blank">National Payroll Institute</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget">
+                                <div class="widget-title">
+                                    <h4>Important Links</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="list clearfix">
+                                        <li><a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/payroll-deductions-online-calculator.html" target="_blank">CRA Payroll Calculator</a></li>
+                                        <li><a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/confirming-a-gst-hst-account-number.html" target="_blank">HST Number Lookup</a></li>
+                                        <li><a href="https://ised-isde.canada.ca/cc/lgcy/fdrlCrpSrch.html" target="_blank">Federal Corporations</a></li>
+                                        <li><a href="https://www.ontario.ca/page/ontario-business-registry" target="_blank">Ontario Business Registry</a></li>
+                                        <li><a href="https://www.canada.ca/en/revenue-agency/services/tax/prescribed-interest-rates.html" target="_blank">Prescribed Interest Rates </a></li>
+                                        <li><a href="https://www.wsib.ca/en" target="_blank">WSIB E-Services</a></li>
+                                        <li><a href="https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services.html" target="_blank">CRA Account Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="copyright"><p>&copy; 2026 <a href="index.html">Toronto Tax Services</a> - All Rights Reserved.</p></div>
+            </div>
+        </div>
+    </footer>
+    <!-- main-footer end -->
+
+
+
+    <!--Scroll to top-->
+    <button class="scroll-top style-two scroll-to-target" data-target="html">
+        <span class="fa fa-arrow-up"></span>
+    </button>
+
+
+    
+
+
+<!-- jequery plugins -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/validation.js"></script>
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/jquery.countTo.js"></script>
+<script src="assets/js/scrollbar.js"></script>
+<script src="assets/js/nav-tool.js"></script>
+<script src="assets/js/TweenMax.min.js"></script>
+<script src="assets/js/circle-progress.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
+
+<!-- main-js -->
+<script src="assets/js/script.js"></script>
+<script src="https://app.cal.com/embed/embed.js"></script>
+  
+ 
+
+
+
+<script>
+  function openCal() {
+    Cal("open", {
+      calLink: "torontotax/free-consultation"
+    });
+  }
+</script>
+</body><!-- End of .page_wrapper -->
+</html>
+
+
