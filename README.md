@@ -280,6 +280,41 @@ Through this project I learned:
 - Session handling in PHP
 
 ---
+# 🤖 AI Usage Reflection
+
+## How AI Was Used During Development
+
+AI was used as a support and learning tool throughout the development of this project. It assisted with brainstorming UI improvements, debugging issues, improving responsive layouts, organizing components, and understanding Git/GitHub workflows. Rather than directly copying generated code, the suggestions were reviewed, modified, and adapted to fit the project requirements and overall application structure.
+
+For example, AI was used to:
+- Improve responsive navigation and layout structure
+- Refactor sections for cleaner UI/UX
+- Add reusable component comments and documentation
+- Troubleshoot Git merge conflicts and GitHub push issues
+- Improve README formatting and project documentation
+
+## Understanding & Verifying the Code
+
+All AI-assisted code and suggestions were tested and verified locally before being integrated into the project. Debugging tools, browser testing, and manual testing were used to ensure functionality, responsiveness, and compatibility across different sections of the application.
+
+Several AI-generated ideas were modified to better match the project goals. For example:
+- Dashboard/statistics sections were redesigned for a cleaner ecommerce UI
+- Responsive layouts were adjusted manually for mobile optimization
+- GitHub workflows and merge conflict resolutions were verified step-by-step before pushing changes
+
+This process helped ensure that the final implementation was fully understood and correctly integrated into the project.
+
+## Learning Outcomes From Using AI
+
+Using AI throughout the project significantly improved both technical and problem-solving skills. It helped strengthen understanding of:
+- Full-stack development workflows
+- Git & GitHub collaboration
+- Responsive web design
+- Component organization
+- Debugging and troubleshooting
+- PHP and React project structure
+
+Most importantly, AI helped improve confidence in analyzing, adapting, and improving code independently rather than simply copying solutions. The experience reinforced practical development skills and provided insight into real-world collaborative software development practices.
 
 # 👩‍💻 Author
 
